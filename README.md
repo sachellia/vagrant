@@ -11,8 +11,8 @@ vagrant up
 
 
 # kubenetes initialization 
-vagrant ssh master
-sudo kubeadm init --apiserver-advertise-address=192.168.57.10 --pod-network-cidr=10.244.0.0/16
+1. vagrant ssh master
+2. sudo kubeadm init --apiserver-advertise-address=192.168.57.10 --pod-network-cidr=10.244.0.0/16
 
 follow the instruction from the above output
 
