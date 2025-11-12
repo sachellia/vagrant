@@ -10,4 +10,16 @@ download the vagrant file and issue
 vagrant up
 
 
+# kubenetes initialization 
+vagrant ssh master
+sudo kubeadm init --apiserver-advertise-address=192.168.57.10 --pod-network-cidr=10.244.0.0/16
+
+follow the instruction from the above output
+
+# Flannel CNI (Container Network Interface) plugin after Kubernetes initialization.
+kubectl apply -f https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml
+
+
+
+
    
